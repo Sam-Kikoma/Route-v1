@@ -10,9 +10,11 @@ import { Children } from 'react'
 // Creating the Browser Router
 const router = createBrowserRouter([
   {
+    //Root route
     path: "/",
     element : <App/>,
     errorElement : <ErrorPage/>,
+    // Nested routes 
     children: [{
       path: "contacts/:contactId",
       element: <Contact/>
